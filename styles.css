@@ -1,3 +1,134 @@
-/* styles.css - project stylesheet (empty placeholder) */
+/* styles.css */
 
-/* Add styles here as needed */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d6efd;
+    margin: 0 6px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* CSS Grid section: title left, grid blocks right */
+#cssGrid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+#cssGrid > h3 {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.grid-item {
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    padding: 12px;
+    text-align: left;
+}
+
+.grid-item.item3 {
+    grid-column: span 2;
+}
+
+/* Flexbox section: items in rows */
+#flexbox {
+    padding: 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    text-align: left;
+}
+
+.flex-item {
+    flex: 1 1 300px;
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    padding: 12px;
+    text-align: left;
+}
+main a
+{
+    transition: color 0.3s;
+}
+main a:hover {
+    color: red;
+}
+/* --- Validation Grid --- */
+#validationGrid.validation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 16px;
+}
+
+.validation-card {
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 16px;
+    text-align: left;
+}
+
+.validation-card h3 {
+    margin-top: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Tables and forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="Html.html">Semantic HTML</a> |
+    <a href="Layout.html">Grid vs Flexbox</a> |
+    <a href="Responsive.html">Dynamic webpages</a> |
+    <a href="Access.html">Ease of use</a> |
+    <a href="Valid.html">Validation</a>
+    <a href="codeEditor.html">Code Editor</a>
+  </nav>
+  <main>
+    <section id="tablesIntro">
+      <h2>Introduction to HTML Tables and Forms</h2>
+      <p>Tables are used to display data in a manner that is easy to understand, with rows and columns organizing the information. Forms allow users to input data, making websites interactive and functional.</p>
+    </section>
+    <section id="tablesExample">
+      <h3>Example of an HTML Table</h3>
+      <table>
+        <tr>
+          <th>Element</th>
+          <th>Link</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Video</td>
+          <td><video><iframe width="560" height="315" src="https://www.youtube.com/embed/e62D-aayveY?si=wznmoa233lYeqZcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video></td>
+          <td>This is an embedded Youtube video about HTML tables and forms</td>
+        </tr>
+        <tr>
+          <td>Article</td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table">MDN Web Docs - HTML Tables</a></td>
+          <td>This is a link to the MDN Web Docs page about HTML tables</td>
+        </tr>
+      </table>
+    </section>
+    <section id="formsExample">
+      <h3>Example of an HTML Form</h3>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
