@@ -45,7 +45,6 @@ iframe {
     max-width: 100%;
 }
 
-/* CSS Grid section: title left, grid blocks right */
 #cssGrid {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -79,7 +78,6 @@ iframe {
     grid-column: span 2;
 }
 
-/* Flexbox section: items in rows */
 #flexbox {
     padding: 16px;
     border: 1px solid #ccc;
@@ -108,7 +106,6 @@ main a
 main a:hover {
     color: red;
 }
-/* --- Validation Grid --- */
 #validationGrid.validation-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(240px, 1fr));
@@ -142,10 +139,9 @@ main a:hover {
     border: 0;
 }
 
-/* --- Tables: boxed with lines --- */
 table {
     width: 100%;
-    border-collapse: collapse; /* ensures single borders */
+    border-collapse: collapse;
     margin: 16px 0;
     background: #fff;
 }
