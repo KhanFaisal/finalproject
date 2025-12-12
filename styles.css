@@ -57,6 +57,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.site-footer {
+    margin-top: 24px;
+    padding: 12px 0;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--content-padding-x);
+    padding-right: var(--content-padding-x);
+}
+
+.site-footer a {
+    color: inherit;
+}
+
 /* Global iframe sizing handled via wrapper; fallback to responsive width */
 iframe {
     display: block;
@@ -64,10 +80,9 @@ iframe {
     width: 100%;
 }
 
-/* Preferred: wrap iframes in .video-wrapper for 16:9 aspect */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
