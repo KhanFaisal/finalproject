@@ -43,18 +43,33 @@ h2 {
 
 nav {
     margin-bottom: 20px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+    padding: 12px 10px;
+    background: #1f2937; /* Slate-800 */
+    border-bottom: 1px solid #0f172a; /* Slate-900 */
 }
 
 nav a {
     text-decoration: none;
-    color: #0d6efd;
+    color: #ffffff; /* High contrast on dark bg */
     margin: 0 6px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
+    color: #93c5fd; /* Light blue for contrast */
+    text-decoration: underline;
+    outline: none;
+}
+
+nav a:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+/* Active/current page link */
+nav a[aria-current="page"] {
+    color: #93c5fd;
+    font-weight: 600;
     text-decoration: underline;
 }
 
